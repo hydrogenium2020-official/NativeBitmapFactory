@@ -320,7 +320,7 @@ inline void *createSkBitmap(ndkbitmap_object_t *obj, int config, int w, int h)
     {
         return NULL;
     }
-    *((uint32_t *) ((uint32_t)skBitmap + SIZE_OF_SKBITMAP - 4)) = 0xbaadbaad;
+    *((uint64_t *) ((uint64_t)skBitmap + SIZE_OF_SKBITMAP - 4)) = 0xbaadbaad;
     //ctor
     p_sys->sk_ctor(skBitmap);
     if (p_sys->sk_setConfig)
@@ -339,7 +339,7 @@ inline void *createSkBitmap(ndkbitmap_object_t *obj, int config, int w, int h)
     p_sys->sk_eraseARGB(skBitmap, 0, 0, 0, 0);
 
 
-    if (!(*((uint32_t *) ((uint32_t)skBitmap + SIZE_OF_SKBITMAP - 4)) == 0xbaadbaad) )
+    if (!(*((uint64_t *) ((uint64_t)skBitmap + SIZE_OF_SKBITMAP - 4)) == 0xbaadbaad) )
     {
         free(skBitmap);
         return NULL;
