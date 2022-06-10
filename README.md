@@ -13,7 +13,7 @@
 
 在`settings.gradle`文件中加入
 
-    include ':DanmakuFlameMaster'
+    include ':NativeBitmapFactory'
 
 然后在`build.gradle`文件
 `dependencies`函数下加入
