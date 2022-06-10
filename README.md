@@ -23,6 +23,7 @@
 ## B.编译so
 ### Linux
 `cd src\main\jni` 
+
 `NDK目录\ndk-build` 就可以了
 
 ## C.编译成aar
@@ -31,6 +32,7 @@
 # License
 本项目遵循Apache 2.0协议
 Copyright (C) 2022 Hydrogenium2020
+
 Copyright (C) 2013-2015 Chen Hui <calmer91@gmail.com>
 
 
