@@ -30,7 +30,9 @@
 
 # License
 本项目遵循Apache 2.0协议
-Copyright 2018 Hydrogenium2020
+Copyright (C) 2022 Hydrogenium2020
+Copyright (C) 2013-2015 Chen Hui <calmer91@gmail.com>
+
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
 
